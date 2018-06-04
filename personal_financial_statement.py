@@ -11,7 +11,7 @@ from fancyprint import fprint
 
 # Functions --------------------------------------------------------------------
 
-def income(earned, real_estate):
+def income(earned, real_estate, business):
     """calculate total income from earned and passive income"""
 
     fprint('Income', color='b', style='bu')
@@ -32,7 +32,7 @@ def income(earned, real_estate):
 
     earned_total_line = f'Earned Total: {earned_total}'
     real_estate_line = f'Real Estate: {real_estate}'
-    business = f'Business: {business}'
+    business_line = f'Business: {business}'
     passive_total_line = f'Passive Total: {passive_total}'
     total_income_line = f'Total Income: {total_income}'
 
@@ -60,7 +60,7 @@ def total(x, y):
 
 
 def main(args):
-    income(args.earned, args.real_estate, args.business)
+    income(args.earned, args.real_estate, args.biz)
 
 
 def parse_arguments():
@@ -100,4 +100,4 @@ def parse_arguments():
 # Execute ----------------------------------------------------------------------
 if __name__ == '__main__':
     args=parse_arguments()
-    main(args)    
+    main(args)
