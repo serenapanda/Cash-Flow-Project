@@ -14,7 +14,7 @@ from fancyprint import fprint
 def income(earned, real_estate, business):
     """calculate total income from earned and passive income"""
 
-    fprint('Income', color='b', style='bu')
+    fprint('Income', color='dc', style='bu')
     earned_lines = []
     for number, value in itertools.islice(
         enumerate([0] + args.earned),
